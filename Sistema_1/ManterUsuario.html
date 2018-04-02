@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+
+	<title>Manter Usuário</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+
+</head>
+
+
+<body>
+
+	<div class="container">
+		<div class="mb-3">
+
+			<nav class="navbar navbar-expand-sm ">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><b> Cadastro </b></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="PreCadastro.html"><b> Pré-Cadastro </b></a>
+							<a class="dropdown-item" href="CadastrarCliente.html"><b> Cadastrar Cliente </b></a>
+							<a class="dropdown-item" href="ManterUsuario.html"> <b> Manter Usúario </b> </a>
+							<a class="dropdown-item" href="CadastrarUsuario.html"> <b> Cadastrar Usúario </b> </a>
+						</div>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link   " href="GerarRelatorios.html"><b> Relatório </b> </a>
+					</li>
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><b> Pagamento </b></a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="AlterarValorHora.html"><b> Alterar valor hora </b></a>	
+								<a class="dropdown-item" href="Pagamento.html"><b> Pagamento </b></a>			
+							</div>
+						</li>					
+						<li class="nav-item">
+							<a class="nav-link" href="Cadastrarvagas.html"> <b> Vagas </b> </a>
+						</li>
+					</ul>
+				</nav>
+				<div class="topo">
+				</div>
+			</div>
+			<h1> Manter Usuário </h1>
+			<form action="" name="Pesquisar" method="post">
+
+				<div class="form-row">
+
+					<div class="col-md-6">
+						<label> Pesquisar por Codigo </label>
+						<input type="text" class="form-control" name="Informar Codigo" value="" placeholder=" Pesquisar " required>
+					</div>
+					<div class="form-group">
+						<div class="submit-responsive">
+							<button type="submit" id="can" class="btn btn-outline-primary"> Consultar </button>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<h2> Contas do Sistema </h2>
+				<div class="table-responsive">
+					<table  class="table table-dark table-hover">
+						<tr>
+							<td> Nome </td>
+							<td> codigo </td>
+							<td> tipo de acesso </td>
+							<td> login </td>
+						</tr>
+						<tr>
+							<td> David Lima </td>
+							<td> 000001 </td>
+							<td> Administrador </td>
+							<td> Davilm001 </td>
+						</tr>
+						<tr>
+							<td> Iuri Salves </td>
+							<td> 000002 </td>
+							<td> Padrão </td>
+							<td> IuriSls002 </td>
+						</tr>
+					</table>
+				</div>
+			</form>
+			<div class="mb-3">
+				<button type="button" class="btn btn-secondary btn-lg"> Editar </button>
+				<button type="button" class="btn btn-outline-danger btn-lg"> Deletar </button>
+			</div>
+			<hr>
+			
+			<p><h2> Novo Acesso </h2></p>
+			<button type="button" class="btn btn-outline-secondary btn-lg btn-block"> Cadastrar Nova Conta </button>
+
+		</div>
+	</body>
+	</html>
