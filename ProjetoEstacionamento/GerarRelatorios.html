@@ -4,6 +4,8 @@
 	<title>Gerar relatórios</title>
 	<meta charset="utf-8">
 
+	<link rel="shortcut icon" href="imagens\fa.jpg" type="image/x-icon">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -20,6 +22,7 @@
 
 	<link rel="stylesheet" type="text/css" href="estilo\estilo.css">
 
+
 </head>
 <body>	
 	<div class="container">
@@ -32,7 +35,6 @@
 							<a class="dropdown-item" href="PreCadastro.html"><b> Pré-Cadastro </b></a>
 							<a class="dropdown-item" href="CadastrarCliente.html"><b> Cadastrar Cliente </b></a>
 							<a class="dropdown-item" href="ManterUsuario.html"> <b> Manter Usúario </b> </a>
-							<a class="dropdown-item" href="CadastrarUsuario.html"> <b> Cadastrar Usúario </b> </a>
 						</div>
 					</li>
 					<li class="nav-item ">
@@ -56,55 +58,50 @@
 			</div>
 			<form method="" action="" name="">
 				<div class="mb-3">
+					
+					<label for="sel1">Por Data</label>
+					<input type="date" class="form-control" name="data">
+				</div>
+				<div class="form-row">
+					<div class="col-md-6 mb-5">
+						<label> Pesquisar por cpf </label>
+						<input type="text" class="form-control" name="Informarcpf" placeholder="000.000.000-00 " required>
+					</div>
 					<div class="form-group">
-						<label for="sel1">Por Período</label>
-						<select class="form-control" id="sel1">
-							<option> Informe o período</option>
-							<option value="DIA"> DIA </option>
-							<option value="SEMANA"> SEMANA </option>
-							<option value="MÊS"> MÊS </option>
-							<option value="ANO"> ANO </option>
-						</select>
-					</div>
-					<div class="form-row">
-						<div class="col-md-6 mb-5">
-							<label> Pesquisar por Codigo </label>
-							<input type="text" class="form-control" name="Informar Codigo" value="" placeholder=" Pesquisar " required>
-						</div>
-						<div class="form-group">
-							<div class="submit-responsive">
-								<button type="submit" id="can" class="btn btn-outline-primary"> Consultar </button>
-							</div>
+						<div class="submit-responsive">
+							<button type="submit" id="can" class="btn btn-outline-primary"> Consultar </button>
 						</div>
 					</div>
-					<table class="table table-dark table-hover">
-						<thead>
-							<tr>
-								<th>Firstname</th>
-								<th>Lastname</th>
-								<th>Email</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>John</td>
-								<td>Doe</td>
-								<td>john@example.com</td>
-							</tr>
-							<tr>
-								<td>Mary</td>
-								<td>Moe</td>
-								<td>mary@example.com</td>
-							</tr>
-							<tr>
-								<td>July</td>
-								<td>Dooley</td>
-								<td>july@example.com</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>  	 
-			</body>
-			</html>
+				</div>
+				<div ></div>
+				<table class="table table-dark table-hover ">
+					<thead>
+						<tr>
+							<th>Nome do Cliente</th>
+							<th>Vaga Ofertada</th>
+							<th>Placa do Veículo</th>
+							<th>Data da Entrada</th>
+							<th>Data da Saída</th>
+							<th>Valor</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Bruno</td>
+							<td>N° 15</td>
+							<td>LOL-1533</td>
+							<td>18/06/2018</td>
+							<td>20/06/2018</td>
+							<td>70,58</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="offset-md-5">
+				<button id="bt" class="btn btn-outline-primary" onclick="print()"> Imprimir Relatório</button>
+			</div>
+		</div>  	 
+	</body>
+	</html>
 
 

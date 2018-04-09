@@ -1,7 +1,7 @@
 
 body {
 
-background: #D3D3D3
+	background: #D3D3D3
 
 
 }
@@ -18,7 +18,7 @@ background: #D3D3D3
 
 .btn-primary{
 
-margin-top: 25px;
+	margin-top: 25px;
 
 
 
@@ -28,26 +28,26 @@ margin-top: 25px;
 
 .nav-link{
 
-color: white;
-margin-left: 25px;
+	color: white;
+	margin-left: 25px;
 
 }
 
 
- .navbar-expand-sm {
+.navbar-expand-sm {
 	
-background: #000066;
-margin-top: -50px;
+	background: #000066;
+	margin-top: -50px;
 
 }
 
 hr{
 
-	 height:2px;
-	 border:none; 
-	 background-color:#000; 
-	 margin-top: 0px; 
-	 margin-bottom:20px;
+	height:2px;
+	border:none; 
+	background-color:#000; 
+	margin-top: 0px; 
+	margin-bottom:20px;
 }
 /*  Estilo de botões   */
 #can{
@@ -70,7 +70,7 @@ hr{
 	border: solid 2px;
 	border-color: #000066;
 
-	}
+}
 
 
 
@@ -135,3 +135,6 @@ hr{
 
 
 
+#seuformulario{
+	display: none;
+}
